@@ -69,3 +69,19 @@ textarea{
   font-size: 20px;
   transition: all .3s ease-in-out;
 }
+.time-table {
+  width: 100%;
+  border: 5px solid black;
+  padding: 50px;
+}
+
+.save-button {
+  float: right;
+  height: 67px;
+  background-color: blue;
+  color:coral;
+}
+
+#currentDay.lead {
+  font-size: 50px;
+}

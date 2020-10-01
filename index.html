@@ -22,18 +22,6 @@
     <title>Work Day Scheduler</title>
   </head>
 
-  <style>
-    .time-table {
-      width: 100%;
-      border: 5px solid black;
-      padding: 50px;
-    }
-
-    .save-button {
-      float: right;
-    }
-  </style>
-
   <body>
     <header class="jumbotron">
       <h1 class="display-3">Work Day Scheduler</h1>
@@ -43,45 +31,10 @@
     </header>
     <div class="container">
       <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-      <script type = "text/javascript">
-        
-        $(document).ready(function() {
-          var hours = ["9AM","10AM", "11AM", "12PM", "1PM", "2PM", "3PM", "4PM", "5PM"];
-
-          for(var i = 0; i < hours.length; i++) {
-
-            var hourBlocks = $("<div>");
-
-            hourBlocks.addClass("time-table");
-
-            hourBlocks.attr("data-letter", hours[i]);
-
-            hourBlocks.add("<button>");
-
-            hourBlocks.text(hours[i]);
-
-            $(".container").append(hourBlocks);
-
-        
-        
-
-          }
-          
-          var newButton = $('<input/>').attr({ type: 'button', name:'btn1', value:'Click' });
-
-          newButton.addClass("save-button");
-
-            $(".time-table").append(newButton);
-
-        });
-
-        
-
-      </script>
+      <script src ="script.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+      
     </div>
-
-    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
 
   </body>
 </html>

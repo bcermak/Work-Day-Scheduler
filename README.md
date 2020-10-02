@@ -8,7 +8,7 @@ To create a program that works as a "Day Planner" that stores tasks before and a
 
 - JQuery/Moment.js
 
-**Other Languages Used** :HTML, CSS, JS
+**Other Languages Used** : HTML, CSS, JS
 
 
 ## Deployed Page: ##

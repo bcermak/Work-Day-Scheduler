@@ -12,19 +12,33 @@ $(document).ready(function() {
 
       $(".container").append(hourBlocks);
       $("#currentDay").text(moment().format('MMMM Do, YYYY'));
-
-      
-
+  
     }
 
-    var newButton = $('<input/>').attr({ type: 'button', name:'btn1', value:'Click' });
+            
+    var newButton = $('<input/>').attr({ type: 'button', name:'btn1', value:'SAVE' });
 
     newButton.addClass("save-button");
     $(".time-table").append(newButton);
 
+    
     var currentHour = moment().hour();
     console.log(currentHour);
-    
+
+    var currentTime = moment().hour();
+
+    $(".time-table").each(function () {
+        var curHour = parseInt($(this).parent().attr("id"));
+        
+        if (curHour > currentTime)
+            $(this).addClass("future");
+     
+        else if (curHour == currentTime)
+            $(this).addClass("present");
+        
+        else
+            $(this).addClass("past");
+    })
 
   });
 
